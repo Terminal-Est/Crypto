@@ -3,6 +3,8 @@ function addTwo(int1, int2) {
 }
 
 function outputText() {
-  var text = document.getElementById("txta1").value;
-  document.getElementById("p3").innerHTML = text;
+  let text = document.getElementById("txta1").value;
+  let len = text.length;
+  let codeOut = text.charAt(1);
+  document.getElementById("p3").innerHTML = codeOut;
 }
