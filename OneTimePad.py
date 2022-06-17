@@ -1,10 +1,13 @@
+from random import randint
+
 def otp():
     ints = [0, 0, 0]
     y = 0
+    randSeed = randint(0, 999999)
     while y < len(ints):
         ints[y] = input("Enter integer: ")
         y += 1
-    return int(ints[0]) ^ int(ints[1]) ^ int(ints[2]), ints
+    return int(ints[0]) ^ int(ints[1]) ^ int(ints[2]) ^ randSeed, ints
 
 def sec_key():
     ints = [0, 0]
